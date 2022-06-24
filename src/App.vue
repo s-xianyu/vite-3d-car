@@ -388,21 +388,6 @@ const changeRenderSize = () => {
     renderer.setSize(window.innerWidth, window.innerHeight);
   });
 };
-// 设置广告
-const setAdv = () => {
-  console.log(
-      "%c我是 feilongzuo ,关注我，教你学会更多 Web 技术!",
-      "font-size:16px;color:red;padding:15px 0;maring:0;"
-  );
-  console.log(
-      "%c抖音号：feilong.code",
-      "font-size:14px;color:#ff8400;padding:8px 0;"
-  );
-  console.log(
-      "%c快手号：feilong-code",
-      "font-size:14px;color:#ff8400;padding:8px 0;"
-  );
-};
 const init = async () => {
   // 创建场景
   scene = new THREE.Scene();
@@ -446,8 +431,6 @@ const init = async () => {
   watchColorChange();
   // 监听页面变化重新渲染画布
   listenPageSizeChange();
-  // 设置广告
-  // setAdv();
 }
 onMounted(() => {
   init()
